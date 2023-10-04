@@ -5,33 +5,55 @@ html {
 
 body {
     /*background: url(background-photo.jpg) center center cover no-repeat fixed;*/
-    background-image: url("../images/Fondo2.png");
+    background: linear-gradient(rgba(70, 70, 70, 0.803), rgba(73, 73, 73, 0.7)),
+        url("../images/Fondo2.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+    overflow-x: hidden;
 
 }
 
-
-.containerprofile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.navbar {
-    font-style: bold;
-    font-family: 'Poppins';
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #8a8a8a80;
     position: sticky;
     top: 0;
-    z-index: 100;
-    background-color: #a8a8a87c;
-    /* Cambia el color de fondo */
-    padding: 2px;
+    z-index: 1;
+    /*Add this*/
+}
 
+.logo {
+    /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profile-img {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%
+}
+
+
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
 }
 
 
@@ -55,8 +77,6 @@ body {
     color: #a8a8a8;
 }
 
-
-
 .TextosLanding span.p1 {
     align-items: flex-start;
 }
@@ -77,23 +97,29 @@ body {
     -webkit-text-stroke-color: black;
 }
 
+.TextosLanding span.gameRed {
+    color: red;
+    font-size: 8vw;
+    -webkit-text-stroke-width: 0.4vw;
+    -webkit-text-stroke-color: black;
+}
+
 .TextosLanding h2 {
     font-size: 8vw;
     color: black;
-    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-width: 0.05vw;
     -webkit-text-stroke-color: white;
 
 }
 
 .TextosLanding .textosFBlanco p {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 4vw;
     color: black;
-    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-width: 0.08vw;
     -webkit-text-stroke-color: white;
 
 }
-
 
 .card {
     max-width: 800px;

@@ -10,6 +10,7 @@
 #perfil {
     max-width: 30px;
     border-radius: 90px;
+    margin-right: 15px;
     /* position:fixed;
     right: 15px;    
     top: 15px; */
@@ -34,7 +35,6 @@ body{
 }
 
 #juegos{
-
 }
 
 #amigos{
@@ -43,6 +43,7 @@ body{
 
 .borde{
     background-color: #8a8a8a;   
+    border-radius: 15px;
 }
 
 #publi{
@@ -64,3 +65,14 @@ body{
 .publicaciones {
     text-align: center;
 }
+
+h5{
+    text-align:left;
+}
+
+p{
+    text-align: justify;
+}
+
+
+

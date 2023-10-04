@@ -11,14 +11,23 @@
 	<link rel="stylesheet" href="../assets/styles/registrarUsusario.css">
 </head>
 
-<body>
-	<nav class="navbar sticky-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img src="../assets/images/img_registrarUX/Letra G en rojo.png" alt="">
+<body class="d-flex flex-column min-vh-100">
+
+	<!-- Barra de navegación -->
+	<nav class="custom-navbar d-flex justify-content-between">
+		<!-- Contenedor Logo -->
+		<div id="Logo">
+			<a class="navbar-brand" href="/dashBoard.html">
+				<img src="../assets/images/Logo.svg" alt="logo" class="logo">
 			</a>
-		</div>
-	</nav>
+		</div> <!-- Cierre de contenedor logo -->
+		<!-- Contenedor de Imagen Login/Logout -->
+		<div class="containerProfile position-relative" id="profile-img">
+		</div> <!-- Cierre de contenedor de Imagen Login/Logout -->
+		<div class="config-menu" id="config-menu">
+		</div> <!-- Cierre div de menu -->
+	</nav> <!-- Cierre de Barra de navegación -->
+
 
 	<div class="container">
 
@@ -58,20 +67,23 @@
 			</div>
 			<div class="col-12 mb-3">
 				<div class="form-floating">
-					<input type="password" class="form-control" id="input-password-confirm" placeholder="Confirmar contraseña">
+					<input type="password" class="form-control" id="input-password-confirm"
+						placeholder="Confirmar contraseña">
 					<label for="input-password-confirm">Confirmar contraseña</label>
 				</div>
 			</div>
 			<div class="col-12">
 				<div class="form-check">
 					<input type="checkbox" class="form-check-input" id="check-get-support">
-					<label for="check-get-support" class="form-check-label">Deseo recibir apoyo de otros jugadores</label>
+					<label for="check-get-support" class="form-check-label">Deseo recibir apoyo de otros
+						jugadores</label>
 				</div>
 			</div>
 			<div class="col-12">
 				<div class="form-check">
 					<input type="checkbox" class="form-check-input" id="check-give-support">
-					<label for="check-give-support" class="form-check-label">Deseo brindar apoyo de otros jugadores</label>
+					<label for="check-give-support" class="form-check-label">Deseo brindar apoyo de otros
+						jugadores</label>
 				</div>
 			</div>
 			<div class="col-12">
@@ -94,9 +106,43 @@
 
 	</div>
 
+	<!-- Footer -->
+	<footer class="mt-auto">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-4">
+					<div class="divider"></div>
+				</div>
+				<div class="col-4 footer-social">
+					<a href="#" class="social-icon"><img src="../assets/images/linkedin.png" alt="LinkedIn"></a>
+					<a href="#" class="social-icon"><img src="../assets/images/github-logo.png" alt="GitHub"></a>
+					<a href="#" class="social-icon"><img src="../assets/images/Discord.svg" alt="Discord"></a>
+					<!-- Agrega más redes sociales si es necesario -->
+				</div>
+				<div class="col-4">
+					<div class="divider"></div>
+				</div>
+			</div>
+			<img src="../assets/images/Logo.svg" alt="logo" class="footerlogo">
+			<div class="row links">
+				<div class="col-4">
+					<a href="./AboutUs.html">Acerca de nosotros</a>
+				</div>
+				<div class="col-4">
+					<a href="./Terminosycondiciones.html">Terminos y condiciones</a>
+				</div>
+				<div class="col-4">
+					<a href="./contactanos.html">Contactanos</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
+	<script src="../assets/scripts/scriptsMenuNavbar.js"></script>
 </body>
 
 </html>

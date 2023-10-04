@@ -1,7 +1,10 @@
 body {
     background-color: #000000;
-    color: aliceblue;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    color: white;
 }
 
 /* Barra de navegación */
@@ -11,72 +14,107 @@ body {
     top: 0;
 }
 
-.logo {
+.logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-
-.perfil {
-    width: 45px;
-    border-radius: 50%
-}
-
-.containerProfile {
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5d5d5d;
+    box-shadow: 0 0 10px #000000;
+    z-index: 1;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: medium;
+}
+.config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e425282a;
+}
+
 
 /* Personal info */
 .containerFondoPerfil {
-    height: 400px; /* Alto deseado del contenedor */
+    height: 400px;
+    /* Alto deseado del contenedor */
     overflow: hidden;
     position: relative;
     margin-top: -120px;
     z-index: -1;
 }
+
 .fondoPerfil {
     width: 100%;
     position: relative;
     margin-top: -200px;
 }
+
 .containerFotoPerfil {
     margin-top: -100px;
     margin-left: 100px;
 }
-.containerFotoPerfil img{
+
+.containerFotoPerfil img {
     border-radius: 50%;
     width: 200px;
 }
+
 .containerNickname {
     margin-top: -105px;
     margin-left: 320px;
 }
+
 .containerNickname h1 {
     color: white;
     font-size: 40px;
     font-weight: bold;
 }
 
-.col-xl-6{
+.col-xl-6 {
     margin-top: 60px;
 }
 
-.containerJuegosLogros h2{
+.containerJuegosLogros h2 {
     margin-left: 50px;
 }
 
 .menuJuegos {
     list-style-type: none;
     padding: 0;
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .menuJuegos li {
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .juego {
@@ -92,12 +130,12 @@ body {
 }
 
 .logro {
-    margin: 0;
-    margin-inline: 6px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin: 0 6px;
+    padding-inline: 0;
+    height: 40px;
     width: 40px;
     border-radius: 50%;
+    border: 1px solid #ffffff;
 }
 
 #verMasJuegos {
@@ -114,23 +152,25 @@ div.scrollmenu {
     margin-top: 10px;
 }
 
-.containerAmigos{
+.containerAmigos {
     margin-top: 15px;
     margin-right: 20px;
 }
 
-.containerAmigos h2{
+.containerAmigos h2 {
     margin-left: 50px;
 }
 
 .menuAmigos {
     list-style-type: none;
     padding: 0;
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .menuAmigos li {
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .menuAmigos img {
@@ -138,6 +178,7 @@ div.scrollmenu {
     margin-inline: 20px;
     border-radius: 50%;
 }
+
 #verMasAmigos {
     border-radius: 10%;
     width: 100px;
@@ -157,7 +198,7 @@ div.scrollmenu {
 }
 
 .containerPubli img {
-    width:80px;
+    width: 80px;
     margin-top: 60px;
     margin-left: 750px;
     margin-bottom: 20px;

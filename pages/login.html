@@ -1,38 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
     <meta name="theme-color" content="#000000">
+    <link rel="icon" href="../assets/images/img_registrarUX/Letra G en rojo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles/formulario.css">
-    <title>LinkGameIn|Inicio de Sesion</title>
+    <title>LinkGameIn - Iniciar Sesión</title>
 </head>
-<body>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Barra de navegación -->
+    <nav class="custom-navbar d-flex justify-content-between">
+        <!-- Contenedor Logo -->
+        <div id="Logo">
+            <a class="navbar-brand" href="/dashBoard.html">
+                <img src="../assets/images/Logo.svg" alt="logo" class="logo">
+            </a>
+        </div> <!-- Cierre de contenedor logo -->
+        <!-- Contenedor de Imagen Login/Logout -->
+        <div class="containerProfile position-relative" id="profile-img">
+        </div> <!-- Cierre de contenedor de Imagen Login/Logout -->
+        <div class="config-menu" id="config-menu">
+        </div> <!-- Cierre div de menu -->
+    </nav> <!-- Cierre de Barra de navegación -->
     <div class="background">
-        <div class="tarjeta"><!-- Contenedor de la tarjeta -->
+
+        <div class="container tarjeta"><!-- Contenedor de la tarjeta -->
             <div class="logo">
-                <img src="../assets/images/favicon-16x16.png" alt="Logo">
+                <img src="../assets/images/img_registrarUX/loginImg.png" alt="Logo">
             </div>
-            <form action="#" method="post">
-                <div class="input">
-                    <input type="email" id="email" name="email" required>
-                    <label for="email">Correo Electrónico</label>
+            <form class="row g-3" action="#" method="post" id="login-form"><!-- Inicio del form -->
+                <div class="col-12 mb-3">
+                    <div class="form-floating">
+                        <input type="email" name="email" class="form-control" id="input-email"
+                            placeholder="correo@ejemplo.com">
+                        <label for="input-email">correo@ejemplo.com</label>
+                    </div>
                 </div>
-                <div class="input">
-                    <input type="password" id="password" name="password" required>
-                    <label for="password">Contraseña</label>
+                <div class="col-12 mb-3">
+                    <div class="form-floating">
+                        <input type="password" name="password" class="form-control" id="input-password"
+                            placeholder="Contraseña">
+                        <label for="input-password">Contraseña</label>
+                    </div>
                 </div>
                 <a href="#" class="sinContraseña">Olvidé mi contraseña</a>
-                <button type="submit" class="boton">Iniciar Sesión</button>
+                <div class="d-grid gap-2 col-12 mx-auto" id="btn-register">
+                    <button type="submit" class="btn btn-outline-danger  btn-lg">Iniciar sesión</button>
+                </div>
+
             </form>
             <div class="registro">
                 <p class="sinCuenta">Aún no tengo cuenta</p>
             </div>
             <div class="registro"></div>
-                <a href="#" class="linkRegistro">Regístrate</a>
-            </div>
+            <a href="./registrarUsuario.html" class="linkRegistro">Regístrate</a>
         </div>
     </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="divider"></div>
+                </div>
+                <div class="col-4 footer-social">
+                    <a href="#" class="social-icon"><img src="../assets/images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#" class="social-icon"><img src="../assets/images/github-logo.png" alt="GitHub"></a>
+                    <a href="#" class="social-icon"><img src="../assets/images/Discord.svg" alt="Discord"></a>
+                    <!-- Agrega más redes sociales si es necesario -->
+                </div>
+                <div class="col-4">
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <img src="../assets/images/Logo.svg" alt="logo" class="footerlogo">
+            <div class="row links">
+                <div class="col-4">
+                    <a href="./AboutUs.html">Acerca de nosotros</a>
+                </div>
+                <div class="col-4">
+                    <a href="./Terminosycondiciones.html">Terminos y condiciones</a>
+                </div>
+                <div class="col-4">
+                    <a href="./contactanos.html">Contactanos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../assets/scripts/login.js"></script>
+    <script src="../assets/scripts/scriptsMenuNavbar.js"></script>
 </body>
+
 </html>

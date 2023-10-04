@@ -1,16 +1,6 @@
-/* Fuentes para todo el documento */
 html {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
-}
-
-/* Estilos para el body */
-body {
-    background-image: url(../images/IMG_20230921_231755\ \(1\).png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    overflow-x: hidden;
 }
 
 
@@ -69,85 +59,81 @@ body {
 }
 /*termiman estilos de navbar*/
 
-/* Estilo para el formulario de contacto */
-#form-register-user {
-    max-width: 600px;
-    height: auto;
+
+body {
     background-color: black;
-    border-radius: 30px;
-    opacity: 0.8;
-    padding: 10px 50px;
-    margin: 20px auto;
 }
 
-#title-contact {
-    /* Estilo para el título del formulario */
-    font-weight: 600;
-    font-size: 30px;
+h1 {
+    color: white;
     text-align: center;
-    color: #e42527;
-    margin: 20px 0;
+    font-family: 'Poppins';
 }
 
-#input-comment {
-    /* Estilo para el input de comentario */
-    height: auto;
-    min-height: 50px;
+h3{
+    color: #a8a8a8;
+    text-align: center;
+    font-family: 'Poppins';
 }
 
-#btn-register {
-    /* Estilo para el botón de enviar */
-    margin: 20px 0;
+p{
+    color: #757575;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.form-floating label {
-    /* Estilo para el label de los inputs */
-    color: black;
+#inicial{
+    color: #a8a8a8;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+h5{
+    text-align: center;
+    font-family: 'Poppins';
+    color: #ea25273c;
+}
+
+
+
 
 
 /* Estilo para el footer */
 footer {
     background-color: #8a8a8a80;
-    color: white;
     padding: 10px;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
 }
-
-.footer-container {
-    /* Contenedor principal del footer */
+.footer-container { /* Contenedor principal del footer */
     display: grid;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
-.footerlogo {
-    /* Estilo para el logo en el footer */
+.footerlogo {   /* Estilo para el logo en el footer */
     width: 100px;
     margin: 0 auto;
 }
-
-.divider {
-    /* Estilo para las divisiones entre el logo y los íconos */
+.divider {  /* Estilo para las divisiones entre el logo y los íconos */
     margin-top: 10px;
     width: 100%;
     height: 5px;
     background-color: rgb(0, 0, 0);
 }
-
-.social-icons {
-    /* Estilo para los íconos de redes sociales */
+.social-icons { /* Estilo para los íconos de redes sociales */
     margin-top: 20px;
 }
-
-.social-icon img {
-    /* Estilo para las imágenes de íconos de redes sociales */
+.social-icon img {  /* Estilo para las imágenes de íconos de redes sociales */
     width: 30px;
     height: 30px;
 }
-
-.links a {
-    /* Estilo para los links del footer */
+.links a {  /* Estilo para los links del footer */
     text-decoration: none;
     color: black;
     font-size: medium;
