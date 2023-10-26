@@ -2,135 +2,218 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/img_registrarUX/Letra G en rojo.ico">
     <!-- Estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Estilos personales CSS -->
     <link rel="stylesheet" href="/assets/styles/estilosDeDashBoard.css">
-    <!-- Modificadores Sass -->
-    <link rel="stylesheet" href="/assets/styles/Styles.scss">
-    <title>Dashboard</title>
+    <!--Googlefonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@200;400;600&display=swap"
+        rel="stylesheet" />
+    <title>LinkGameIn</title>
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/dashBoard.html"><img src="/assets/images/Logo-horizontal 1@2x.png"
-                        alt="logo rojo" class="imagen" id="logo"></a>
+<body class="d-flex flex-column min-vh-100">
 
-                <!-- Botón de búsqueda -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="/assets/images/Search.png" alt="logo buscar" class="logo" id="buscar">
-                </button>
-
-                <!-- Vista colapsada de busqueda -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style=" margin-left: 400px;">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar en LinkGameIn"
-                            aria-label="Search">
-                        <button class="btn btn-outline-danger" type="submit">Buscar</button>
-                    </form>
-                </div>
-
-                <!-- Fin de boton de búsqueda -->
-
-                <!-- Imagen de perfil -->
-
-                <a href="#" class="perfilHeader"><img src="/assets/images/Cyberpunk 2077 icon.png" alt="logo rojo"
-                        class="imagen" id="perfil"></a>
-
-                <!-- Fin imagen de perfil -->
-
-            </div>
-        </nav>
-    </header> <!-- Fin de Header -->
+    <!-- Barra de navegación -->
+    <nav class="custom-navbar d-flex justify-content-between">
+        <!-- Contenedor Logo -->
+        <div id="containerLogo">
+        </div> <!-- Cierre de contenedor logo -->
+        <!-- Contenedor de Imagen Login/Logout -->
+        <div class="containerProfile position-relative" id="profileImg">
+        </div> <!-- Cierre de contenedor de Imagen Login/Logout -->
+        <!-- Contenedor Menu Config -->
+        <div class="config-menu" id="configMenu">
+        </div> <!-- Cierre div de menu -->
+    </nav> <!-- Cierre de Barra de navegación -->
 
 
-    <div class="container text-center">
+
+
+
+    <div class="flex-container">
 
         <div class="row">
 
-            <!-- Cloumna de juegos -->
-            <div class="col-lg-3 borde d-none d-md-none d-lg-block" id="juegos">
-                <p> </p>
+            <div class="col-3 menudash d-none d-md-none d-lg-block d-xl-block">
+                <div id="menudash"> <!--comienza columna izquierda-->
+
+                    <div class="cont-photo-nick ">
+
+                        <div class="cont-photo"><img src="../assets/images/perfil.jpg" class="photo-perfil">
+
+                        </div><!--Div imagen perfil-->
+                        <div class="cont-nickname" class="nickname-dash">
+                            <p>Nickname</p>
+
+                        </div><!--Div nickname-->
+                    </div><!--Cierre div class cont-photo-nick-->
+
+                    <ul class="flex-column">
+
+                        <br>
+                        <br>
+                        <p id="amigos-activos">Jugadores activos</p>
+
+                        </li>
+                        <li class="dash-item">
+                            <a class="link active" aria-current="page" href="./profileFriend.html">
+                                <img src="../assets/images/IconosDePerfil/38.png" alt="" class="rounded-circle friend-img">Della <br>
+                                <!--imagen de perfil del amigo-->
+
+                                <!--lo que está jugando (la idea es que la palabra jugando esté por defecto)-->
+                            </a>Jugando League of legends
+                        </li>
+                        <li class="dash-item">
+                            <a class="link" href="#">
+                                <img src="../assets/images/IconosDePerfil/18.png" alt="" class="rounded-circle friend-img">
+                                Kalahazy
+                            </a>Jugando Minecraft
+                        </li>
+                        <li class="dash-item">
+                            <a class="link" href="#">
+                                <img src="../assets/images/IconosDePerfil/46.png" alt="" class="rounded-circle friend-img">
+                                Alan<br>
+
+                            </a>Jugando Valorant
+                        </li>
+                        <li class="dash-item">
+                            <a class="link" href="#">
+                                <img src="../assets/images/IconosDePerfil/8.png" alt="" class="rounded-circle friend-img">
+                                Chinecio <br>
+                            </a>Jugando Warzone
+                        </li>
+                        <li class="dash-item">
+                            <a class="nav-link" href="#">
+                                <img src="../assets/images/IconosDePerfil/13.png" alt="" class="rounded-circle friend-img">
+                                Ale<br>
+                            </a>Jugando TFT
+                        </li>
+                        <li class="dash-item">
+                            <a class="nav-link" href="#">
+                                <img src="../assets/images/IconosDePerfil/19.png" alt="" class="rounded-circle friend-img">
+                                Maks<br>
+                            </a>Jugando TFT
+                        </li>
+                    </ul>
+                    <!--fin de primera columna para menu-->
+
+                </div>
             </div>
 
-            <!-- Cloumna de dashboard  -->
-            <div class="col-md-12 col-lg-6" id="dash">
+            <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 col-xs-12">
 
-                <!-- Container de barra superior para publicar -->
-                <div class="container" id="publi">
-                    <!-- zona de publicación -->
-                    <div class="row" id="publicar">
-                        <!-- Imagen de perfil -->
-                        <div class="col-lg-2">
-                            <a href="#"><img src="/assets/images/Cyberpunk 2077 icon.png" alt="imagen de perfil"
-                                    id="perfil"></a>
-                        </div> <!-- Cierre de imagen de perfil -->
 
-                        <!-- Zona para publicar -->
-                        <div class="col-lg-9 d-grid gap-2">
-                            <button class="btn btn-light" type="button">¿Que quieres publicar?</button>
-                        </div> <!-- Fin zona para publicar -->
-                    </div> <!-- Fin zona de publicaciones -->
 
-                    <!-- Zona de adjuntables -->
-                    <div class="row">
-                        <!-- Logo multimedia -->
-                        <div class="col" id="adjuntables">
-                            <a href="#"><img src="/assets/images/logo_multimedia.png" alt="imagen de perfil"
-                                    id="izq"></a>
-                        </div> <!-- Fin logo multimedia -->
+        <!--    <div class="containerMadePubli">
+                <button type="button" class="open-modal" id="madePubliBtn">
+                    Publica algo $Nickname...
+                </button>
+                <div class="containerButtons open-modal" id="contButtons" style="cursor: pointer">
+                    <img src="../assets/images/picture.png" alt="" id="madePubliImg">
+                    <button type="button" class="btn btn-primary" id="btnMadePubli">
+                        PUBLICAR
+                    </button>
+                </div>
+            </div> <!-- Cierra Contenedor Crear Publicación -->
 
-                        <!-- Logo logros -->
-                        <div class="col" id="adjuntables">
-                            <a href="#"><img src="/assets/images/logo_logros.png" alt="imagen de perfil" id="der"></a>
-                        </div> <!-- Fin logo logros -->
-                    </div> <!-- Fin adjuntables -->
-
-                </div> <!-- Fin de barra superior para publicar -->
-
-                <!-- Zona de publicaciones -->
-                <div class="container d-flex flex-column-flex justify-content-center align-items-center">
-                    <div>
-                        <div class="card text-bg-secondary mb-3 " id="historias">
-                            <div class="card-header"><img
-                                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gaming-flyer-design-template-d0db241e56497cd3212d9173a27294f8_screen.jpg?ts=1673690008"
-                                    class="card-img-top" alt="..."></div>
-                            <div class="card-body">
-                                <h5><a href="#"><img src="/assets/images/perfil.jpg" alt="perfil usuario"
-                                            id="perfil"></a>Nickname Fulanito</h5>
-                                <p>Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
-                        </div> <!-- Fin tarjeta de publicaciones -->
-
-                        <!-- Tarjetas de publicaciones -->
-                        <div class="card text-bg-secondary mb-3 " id="historias">
-                            <div class="card-header"><img
-                                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gaming-flyer-design-template-d0db241e56497cd3212d9173a27294f8_screen.jpg?ts=1673690008"
-                                    class="card-img-top" alt="..."></div>
-                            <div class="card-body">
-                                <h5 class="card-title">Secondary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
-                        </div> <!-- Fin tarjeta de publicaciones -->
+             <!-- Modal de publicación -->
+        <div id="modal" class="modal">
+            <form id="post-form">
+                <div class="modal-content">
+                    <button id="close-modal">X</button>
+                    <textarea id="post-text" placeholder="Escribe tu publicación..."></textarea>
+                    <!-- Etiqueta de imagen para la previsualización -->
+                    <img id="imagePreview" src="" alt="">
+                    <div class="containerButtonsModal">
+                        <div class="custom-file-input">
+                            <img src="../assets/images/picture.png" alt="Seleccionar imagen" id="image-button">
+                            <input type="file" id="image-input" multiple accept="image/*">
+                        </div>
+                        <button type="submit" id="post-button">Publicar</button>
                     </div>
                 </div>
-                <!-- Tarjetas de publicaciones -->
+            </form>
+        </div> <!-- Cierra Modal de publicación -->
+        <!-- Overlay para cuando se abre el modal -->
+        <div class="overlay"></div>
+        
+               
+                <div class="escribir-publicacion">
 
-            </div>
 
-            <!-- Cloumna de amigos -->
-            <div class="col-md-6 col-lg-3 borde d-none d-md-none d-lg-block" id="amigos">
-                <p></p>
+
+                    <div class="img-perfil d-flex">
+                        <img src="../assets/images/perfil.jpg" class="rounded-circle friend-img" id="img-bruja">
+                        <div>
+                            <h4>Nickname</h4>
+                        </div>
+                    </div><!--cierre div imagen-->
+                    
+                    <div><!--inicio de mi div textcontent-->
+                        <div class="containerMadePubli">
+                            <button type="button" class="open-modal" id="madePubliBtn">
+                                Publica algo $Nickname...
+                            </button>
+                            <div class="containerButtons open-modal" id="contButtons">
+                                <img src="../assets/images/picture.png" alt="" id="madePubliImg">
+                            </div>
+                        </div>
+                    </div><!--cierre Div textcontent-->
+                    <div class="bot1">
+                        <button class="bot2">Publicar</button>
+                    </div>
+                </div><!--cierre de mi div escribir publicacion-->
+
+
+
+
+                <div id="contenedorDePublicaciones" class="card custom-card ">
+                </div>
+                <div class="card custom-card ">
+                    <div class="containerprofile d-flex"><img class="profile-img" src="../assets/images/timbers.png"
+                            alt="" srcset="">
+                        <div>
+                            <h4>NoSoyTimbers</h4>
+                            <p>Fortnite Esports</p>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <p>Demos la bienvenida al team #Timbers a nuestro nuevo compañero @NoSoyJelty
+                            #Fortnite #Esports</p>
+
+                        <img src="../assets/images/Jelty.jpg" alt="" srcset="">
+                    </div>
+                    <div class="social-icon"><img src="../assets/images/likeWhites.png" alt="">
+                        <img src="../assets/images/commentWhite.png" alt="">
+                        <img src="../assets/images/shareWhite.png" alt="">
+                    </div>
+                </div>
+                <div class="card custom-card">
+                    <div class="containerprofile d-flex"><img src="../assets/images/elded.jpg" alt="" srcset=""
+                            class="profile-img">
+                        <div>
+                            <h4>NoSoy_elded</h4>
+                            <p>Twitch Streamer</p>
+                        </div>
+                    </div>
+                    <div class="content-card ">
+                        <p>Me encantó el mix de “Ya llegó @elded”
+                            https://www.youtube.com/watch?v=CR4wT5gvbxE
+                            #IraPues</p>
+                        <img src="../assets/images/miselded.jpg" alt="" srcset="">
+                    </div>
+                    <div class="social-icon"><img src="../assets/images/likeWhites.png" alt="">
+                        <img src="../assets/images/commentWhite.png" alt="">
+                        <img src="../assets/images/shareWhite.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -143,8 +226,10 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+    <script src="../assets/scripts/scriptsMenuNavbar.js"></script>
     <!-- Script local -->
     <script src="/assets/scripts/dashBoard.js"></script>
+    <script src="../assets/scripts/publications.js"></script>
 </body>
 
 </html>

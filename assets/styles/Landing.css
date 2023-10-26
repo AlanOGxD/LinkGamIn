@@ -4,43 +4,124 @@ html {
 }
 
 body {
-    /*background: url(background-photo.jpg) center center cover no-repeat fixed;*/
-    background: linear-gradient(rgba(70, 70, 70, 0.803), rgba(73, 73, 73, 0.7)),
-        url("../images/Fondo2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
-    overflow-x: hidden;
-
+    background-color: #000000;
 }
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #8a8a8a80;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
-    /*Add this*/
 }
-
-.logo {
-    /* Estilo para el logo en la barra de navegación */
+.logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-
-.containerProfile {
-    /* Estilo para el contenedor del perfil en la barra de navegación */
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff ;
+    font-size: large;
+}
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
+}
+/*termiman estilos de navbar*/
 
+
+
+
+/*Estilos textos y enlaces*/
+.gamers {
+    margin-top: 25px;
+    font-size: 3rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow:
+        0 0 10px #e4252846,
+        /* Sombra de color rojo */
+
+        0 0 10px #e42527;
+    /* Sombra de color menos rojo :p */
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 450;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+/*ESTILOS DEL CARRUSEL*/
+#cardCarousel {
+    padding: 20px;
+    /* Añade espaciado interior para separar el carrusel de otros elementos */
+}
+
+.container .card {
+    /* estilos para container */
+    z-index: 0;
+    /*Add this*/
+    position: relative;
+    margin: 20px;
+}
+
+
+
+/*Estilos de tarjetas*/
 .profile-img {
     /* Estilo para el contenedor del perfil en la barra de navegación */
     margin: 5px;
@@ -49,88 +130,20 @@ body {
     border-radius: 50%
 }
 
-
-.perfil {
-    /* Estilo para la imagen de perfil en la barra de navegación */
-    width: 45px;
-    border-radius: 50%
-}
-
-
-.TextosLanding {
-    text-align: center;
-    display: inline-block center;
-    margin-top: 25px;
-}
-
-.TextosLanding span.link {
-    color: black;
-    font-weight: 600;
-    -webkit-text-stroke-width: 0.1vw;
-    -webkit-text-stroke-color: white;
-    font-size: 10vw;
-    overflow: hidden;
-}
-
-.TextosLanding p {
-    font-size: 5vw;
-    color: #a8a8a8;
-}
-
-.TextosLanding span.p1 {
-    align-items: flex-start;
-}
-
-.TextosLanding span.p2 {
-    vertical-align: middle;
-}
-
-.TextosLanding span.p3 {
-    vertical-align: bottom;
-}
-
-.TextosLanding span.game {
-    font-weight: 600;
-    color: red;
-    font-size: 10vw;
-    -webkit-text-stroke-width: 0.5vw;
-    -webkit-text-stroke-color: black;
-}
-
-.TextosLanding span.gameRed {
-    color: red;
-    font-size: 8vw;
-    -webkit-text-stroke-width: 0.4vw;
-    -webkit-text-stroke-color: black;
-}
-
-.TextosLanding h2 {
-    font-size: 8vw;
-    color: black;
-    -webkit-text-stroke-width: 0.05vw;
-    -webkit-text-stroke-color: white;
-
-}
-
-.TextosLanding .textosFBlanco p {
-    font-weight: 700;
-    font-size: 4vw;
-    color: black;
-    -webkit-text-stroke-width: 0.08vw;
-    -webkit-text-stroke-color: white;
-
-}
-
 .card {
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
     /* Ancho de las tarjetas */
     height: auto;
     margin: 0 auto;
     margin-top: 50px;
     /* Centra las tarjetas horizontalmente */
-    background-color: #a8a8a8e0;
-    border-color: black;
+    background-color: #141414;
+    box-shadow: 0 0 10px #5d5d5d;
+    padding: 10px;
     border-radius: 5%;
+    color: #fff;
 
 }
 
@@ -148,10 +161,7 @@ body {
     color: white;
 }
 
-.content-card {
-    font-size: 2rem;
 
-}
 
 .content-card img {
     width: 100%;
@@ -160,38 +170,6 @@ body {
     margin-right: 20px;
 }
 
-
-
-/* Estilo para el footer */
-footer {
-    background-color: #a8a8a8;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/* Contenedor principal del footer */
-.footer-container {
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* Estilo para el logo en el footer */
-.footerlogo {
-    width: 100px;
-    margin: 0 auto;
-    /* Centrar horizontalmente */
-}
-
-/* Estilo para las divisiones entre el logo y los íconos */
-.divider {
-    margin-top: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: rgb(0, 0, 0);
-}
 
 /* Estilo para los íconos de redes sociales */
 .social-icons {
@@ -224,40 +202,57 @@ footer {
 }
 
 
-.config-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    /* pone menú debajo de la imagen de perfil */
-    right: 0;
-    /* menú a la dercha de la imagen de la bruja */
-    background-color: #5d5d5d;
-    box-shadow: 0 0 10px #000000;
-    /*sombra al menú creo*/
-    z-index: 1;
-    /* menu encima */
+
+
+/* Estilo para los textos en la clase "log" */
+.log {
+    color: #a8a8a8; /* Texto negro */
+    font-size: 22px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espaciado inferior */
+    text-align: center;
 }
 
-.config-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Estilo para los enlaces dentro de la clase "log" */
+.log a {
+    color: #e4252846; /* Texto rojo para los enlaces */
+    margin-left: 5px; /* Espaciado izquierdo entre el texto y el enlace */
 }
 
-.config-menu ul li {
-    padding: 10px;
-    text-align: left;
+/* Estilo para los enlaces activos dentro de la clase "log" */
+.log a:hover {
+    color: #e42527; /* Cambio de color a blanco cuando se pasa el ratón por encima */
 }
 
-.config-menu ul li a {
-    text-decoration: none;
-    color: #000000;
-    display: block;
-    font-size: medium;
+
+
+/* Contenedor principal del texto final */
+.linking {
+    text-align: center;
+    color: #5d5d5d;
+    padding-top: 50px;
+    font-size: 25px;
 }
 
-/* Estilos para cambiar la apariencia cuando se pasa el ratón sobre las opciones del menú */
-.config-menu ul li a:hover {
-    background-color: #e425282a;
-    /* color de fondo al pasar el ratón */
+
+
+
+.btn-outline-danger {
+    --bs-btn-color: #ea2527;
+    --bs-btn-border-color: #ea2527;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ea2527;
+    --bs-btn-hover-border-color: #ea2527;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ea2527;
+    --bs-btn-active-border-color: #ea2527;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ea2527;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ea2527;
+    --bs-gradient: none;
+}
+
+#button-register {
+    margin-top: 25px;
 }

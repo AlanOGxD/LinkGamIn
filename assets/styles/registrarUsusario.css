@@ -1,70 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@400;600;700&display=swap');
+/* Fuentes para todo el documento */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
 
 body {
-    background-image: url("../images/img_registrarUX/BackImg_Dskp_Or.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    color: white;
-    font-family: 'Bree Serif', serif;
-    font-family: 'Poppins', sans-serif;
+    /*background-image: url("../images/hexagon_background.png");
+    background-size: cover;*/
     overflow-x: hidden;
+    color: white;
+    background-color: #000
 }
-
-
-#form-register-user {
-
-    max-width: 600px;
-    min-height: 620px;
-    background-color: black;
-    border-radius: 30px;
-    opacity: 0.8;
-    padding: 10px 50px;
-    margin: 20px auto;
-}
-
-#title-register {
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    color: #e42527;
-}
-
-.btn-outline-danger {
-    --bs-btn-color: #e42527;
-    --bs-btn-border-color: #e42527;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #e42527;
-    --bs-btn-hover-border-color: #e42527;
-    --bs-btn-focus-shadow-rgb: 220, 53, 69;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #e42527;
-    --bs-btn-active-border-color: #e42527;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #e42527;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #e42527;
-    --bs-gradient: none;
-}
-
-#btn-register {
-    margin-top: 20px;
-}
-
-.form-check-input:checked {
-    background-color: #e42527;
-    border-color: #e42527;
-}
-
-.form-floating label {
-    color: black;
-}
-
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #8a8a8a80;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -91,8 +41,8 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #5d5d5d;
-    box-shadow: 0 0 10px #000000;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
     z-index: 1;
     border-radius: 5px;
     margin-right: 10px;
@@ -101,57 +51,95 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 260px;
 }
 .config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
+    align-items: center;
+    color: #ffffff;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
 }
 .config-menu ul li a {  /* Estilo para los links del menú de configuración */
     text-decoration: none;
-    color: #ffffff;
-    display: block;
-    font-size:large;
+    color: #ffffff ;
+    font-size: large;
 }
-.config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
-    background-color: #e425282a;
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
 }
 /*termiman estilos de navbar*/
 
+/*Estilos para el formulario*/
+.container {
+    margin-top: 30px;
+}
+#form-register-user {
+    max-width: 600px;
+    min-height: 805px;
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #e42527;
+}
 
-/* Estilo para el footer */
-footer {
-    background-color: #8a8a8a80;
-    padding: 10px;
-    margin-top: 20px;
-    bottom: 0;
-    width: 100%;
-}
-.footer-container { /* Contenedor principal del footer */
-    display: grid;
-    flex-direction: column;
-    align-items: center;
+#title-register {
+    font-weight: 600;
+    font-size: 30px;
     text-align: center;
+    color: #a8a8a8;
 }
-.footerlogo {   /* Estilo para el logo en el footer */
-    width: 100px;
-    margin: 0 auto;
+
+.btn-outline-danger {
+    --bs-btn-color: #ea2527;
+    --bs-btn-border-color: #ea2527;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ea2527;
+    --bs-btn-hover-border-color: #ea2527;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ea2527;
+    --bs-btn-active-border-color: #ea2527;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ea2527;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ea2527;
+    --bs-gradient: none;
+
 }
-.divider {  /* Estilo para las divisiones entre el logo y los íconos */
-    margin-top: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: rgb(0, 0, 0);
+
+.form-check-input:checked {
+    background-color: #ea2527;
+    border-color: #ea2527;
 }
-.social-icons { /* Estilo para los íconos de redes sociales */
-    margin-top: 20px;
-}
-.social-icon img {  /* Estilo para las imágenes de íconos de redes sociales */
-    width: 30px;
-    height: 30px;
-}
-.links a {  /* Estilo para los links del footer */
-    text-decoration: none;
+
+.form-floating label {
     color: black;
-    font-size: medium;
-    font-weight: bold;
+}
+
+.login-image{
+    text-align: center;
+
+}
+
+#checked-btn {
+    margin-top: 10px;
+
+}
+
+#conditions {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
