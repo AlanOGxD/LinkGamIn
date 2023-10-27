@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
         logo.innerHTML = `
-            <a class="navbar-brand" href="./dashBoard.html">
-                <img src="/assets/images/logoBlanco.png" alt="logo" class="logo">
+            <a class="navbar-brand" href="./pages/dashBoard.html">
+                <img src=".../assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
-            <img src="../assets/images/perfil.jpg" alt="" class="border border-dark perfil" id="profile-img">
+            <img src=".../assets/images/perfil.jpg" alt="" class="border border-dark perfil" id="profile-img">
             <span class="position-absolute bottom-0 start-0 p-2 bg-success border border-dark rounded-circle"></span>
             `;
         configMenu.innerHTML = `
